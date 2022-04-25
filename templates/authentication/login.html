@@ -4,9 +4,19 @@
 
 {% block content %}
 <h2>Login</h2>
-<form method='post'>
+<form id="auth-form" method="post">
     {% csrf_token %}
-    {{ form.as_p }}
-    <button type='submit'>Login</button>
+    {{ form.non_field_errors }}
+    <div class="input-field">
+        {{ form.username.errors }}
+        {{ form.username.label_tag }}
+        {{ form.username }}
+    </div>
+    <div class="input-field">
+        {{ form.password.errors }}
+        {{ form.password.label_tag }}
+        {{ form.password }}
+    </div>
+    <a href="javascript:{}" class="btn" onclick="document.getElementById('auth-form').submit();">Login</a>
 </form>
 {% endblock content %}

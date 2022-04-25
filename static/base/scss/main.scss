@@ -1,12 +1,70 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
 
+$background-color: #AA8F39;
+$text-color: #FFEBAA;
+$secondary-background-color: #806715;
+$hover-color: #d4bb6aa6;
+$active-color: #554100;
+
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
+    background-color: $background-color;
+    
+    main {
+        h2 {
+            color: $text-color;
+        }
+
+        p {
+            color: $text-color;
+        }
+
+        a.btn {
+            display: inline-block;
+            color: $text-color;
+            text-align: center;
+            width: 80px;
+            height: 20px;
+            padding: 14px 16px;
+            margin: 5px;
+            text-decoration: none;
+            background-color: $secondary-background-color;
+        }
+
+        a.btn:hover {
+            background-color: $hover-color;
+        }
+
+        form#auth-form {
+
+            ul.errorlist.nonfield {
+                li {
+                    color: $active-color;
+                }
+            }
+
+            div.input-field {
+                display: block;
+                padding: 5px 5px;
+                label {
+                    color: $text-color;
+                }
+
+                input {
+                    box-sizing: border-box;
+                    border: 10px $text-color;
+                    border-radius: 10px;
+                    background-color: $secondary-background-color;
+                    color: $text-color;
+                }
+            }
+        }
+    }
 }
 
 .nav {
-    background-color: #333;
+    background-color: $secondary-background-color;
     overflow: hidden;
     margin-bottom: auto;
     ul {
@@ -19,16 +77,16 @@ body {
         float: left;
         a {
             display: block;
-            color: white;
+            color: #FFEBAA;
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
         }
         a:hover {
-            background-color: #111;
+            background-color: $hover-color;
         }
     }
     .active {
-        background-color: #4CAF50;
+        background-color: $active-color;
     }
 }

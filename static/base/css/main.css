@@ -2,10 +2,56 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
+  background-color: #AA8F39;
+}
+
+body main h2 {
+  color: #FFEBAA;
+}
+
+body main p {
+  color: #FFEBAA;
+}
+
+body main a.btn {
+  display: inline-block;
+  color: #FFEBAA;
+  text-align: center;
+  width: 80px;
+  height: 20px;
+  padding: 14px 16px;
+  margin: 5px;
+  text-decoration: none;
+  background-color: #806715;
+}
+
+body main a.btn:hover {
+  background-color: #d4bb6aa6;
+}
+
+body main form#auth-form ul.errorlist.nonfield li {
+  color: #554100;
+}
+
+body main form#auth-form div.input-field {
+  display: block;
+  padding: 5px 5px;
+}
+
+body main form#auth-form div.input-field label {
+  color: #FFEBAA;
+}
+
+body main form#auth-form div.input-field input {
+  box-sizing: border-box;
+  border: 10px #FFEBAA;
+  border-radius: 10px;
+  background-color: #806715;
+  color: #FFEBAA;
 }
 
 .nav {
-  background-color: #333;
+  background-color: #806715;
   overflow: hidden;
   margin-bottom: auto;
 }
@@ -23,18 +69,18 @@ body {
 
 .nav li a {
   display: block;
-  color: white;
+  color: #FFEBAA;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 .nav li a:hover {
-  background-color: #111;
+  background-color: #d4bb6aa6;
 }
 
 .nav .active {
-  background-color: #4CAF50;
+  background-color: #554100;
 }
 
 /*# sourceMappingURL=../css/main.css.map */
