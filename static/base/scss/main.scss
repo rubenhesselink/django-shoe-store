@@ -67,26 +67,21 @@ body {
     background-color: $secondary-background-color;
     overflow: hidden;
     margin-bottom: auto;
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        top: 0;
-    }
-    li {
+    a {
         float: left;
-        a {
-            display: block;
-            color: #FFEBAA;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-        a:hover {
-            background-color: $hover-color;
-        }
+        display: block;
+        color: $text-color;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
     }
-    .active {
+    .nav-right {
+        float: right;
+    }
+    a:hover {
+        background-color: $hover-color;
+    }
+    a.active {
         background-color: $active-color;
     }
 }

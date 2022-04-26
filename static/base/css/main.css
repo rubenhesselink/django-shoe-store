@@ -56,18 +56,8 @@ body main form#auth-form div.input-field input {
   margin-bottom: auto;
 }
 
-.nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  top: 0;
-}
-
-.nav li {
+.nav a {
   float: left;
-}
-
-.nav li a {
   display: block;
   color: #FFEBAA;
   text-align: center;
@@ -75,11 +65,15 @@ body main form#auth-form div.input-field input {
   text-decoration: none;
 }
 
-.nav li a:hover {
+.nav .nav-right {
+  float: right;
+}
+
+.nav a:hover {
   background-color: #d4bb6aa6;
 }
 
-.nav .active {
+.nav a.active {
   background-color: #554100;
 }
 

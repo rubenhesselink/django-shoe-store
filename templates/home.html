@@ -4,11 +4,11 @@
 
 {% block content %}
     {% if user.is_authenticated %}
-        <p>Test {{ user.username }}</p>
+        <p>Welcome! {{ user.username }}</p>
         <a class="btn" href="{% url 'logout' %}">Log Out</a>
     {% else %}
         <p>You are not logged in</p>
-        <a class="btn" href="{% url 'login' %}">Log In</a>
+        <a class="btn" href="{% url 'login' %}">Login</a>
         <a class="btn" href="{% url 'signup' %}">Sign Up</a>
     {% endif %}
 {% endblock content %}

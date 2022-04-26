@@ -8,11 +8,7 @@
     </head>
     <body>
         <div class="nav">
-            <ul>
-                <li><a class="active" href="{% url 'home' %}">Home</a></li>
-                <li><a href="{% url 'login' %}">Login</a></li>
-                <li><a href="{% url 'signup' %}">Sign Up</a></li>
-            </ul>
+            {% include 'navbar.html' %}
         </div>
         <main>
             {% block content %}{% endblock content %}
