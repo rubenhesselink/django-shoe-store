@@ -1,4 +1,5 @@
 venv
+media
 accounts/__pycache__
 accounts/migrations
 accounts/migrations/__pycache__

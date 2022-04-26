@@ -11,6 +11,9 @@ class Order(models.Model):
     date_completed = models.DateTimeField(auto_now_add=False, auto_now=False, null=True, blank=True)
 
 
+def shoe_directory_path(instance, filename):
+    return 'media/shoe_{0}/{1}'.format(instance.shoe.id, filename)
+
 class Shoe(models.Model):
     brand = models.CharField(max_length=50)
     name  = models.CharField(max_length=100)
@@ -37,6 +40,12 @@ class Shoe(models.Model):
             return str(self.brand) + ' ' + str(self.name) + ' | Women'
         else:
             return str(self.brand) + ' ' + str(self.name)
+
+
+class ShoeColor(models.Model):
+    color = models.CharField(max_length=50)
+    shoe = models.ForeignKey("Shoe", on_delete=models.CASCADE)
+    image = models.ImageField(upload_to=shoe_directory_path)
 
 
 class Category(models.Model):
