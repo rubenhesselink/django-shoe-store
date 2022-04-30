@@ -12,12 +12,13 @@ class Order(models.Model):
 
 
 def shoe_directory_path(instance, filename):
-    return 'media/shoe_{0}/{1}'.format(instance.shoe.id, filename)
+    return 'shoe_{0}/{1}'.format(instance.shoe.id, filename)
 
 class Shoe(models.Model):
     brand = models.CharField(max_length=50)
     name  = models.CharField(max_length=100)
     stock = models.PositiveIntegerField(default=0)
+    price = models.DecimalField(max_digits=5, decimal_places=2)
     total_sales = models.PositiveIntegerField(default=0)
     category = models.ManyToManyField("Category")
     date_added = models.DateTimeField(auto_now_add=True, auto_now=False)

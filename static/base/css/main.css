@@ -77,4 +77,93 @@ body main form#auth-form div.input-field input {
   background-color: #554100;
 }
 
+.products {
+  width: 50%;
+}
+
+.product {
+  display: inline-block;
+  width: calc(24% - 13px);
+  margin: 10px 10px 30px 10px;
+  vertical-align: top;
+}
+
+.product img {
+  display: block;
+  margin: 0 auto;
+  width: auto;
+  height: 200px;
+  max-width: calc(100% - 20px);
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.8);
+  border-radius: 2px;
+}
+
+.product h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 10px 0 0 0;
+  color: #554100;
+}
+
+.product h3 small {
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  margin: 7px 0 0 0;
+}
+
+.product .product-text {
+  margin: 7px 0 0 0;
+  color: #FFEBAA;
+}
+
+.product .price {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.product .stock {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.product .genre {
+  font-size: 14px;
+}
+
+.product-content {
+  text-align: center;
+}
+
+@media screen and (min-width: 401px) {
+  .products-table .product {
+    display: block;
+    width: auto;
+    margin: 10px 10px 30px 10px;
+  }
+  .products-table .product .product-img {
+    display: inline-block;
+    margin: 0;
+    width: 120px;
+    height: 120px;
+    vertical-align: middle;
+  }
+  .products-table .product img {
+    width: auto;
+    height: 120px;
+    max-width: 120px;
+  }
+  .products-table .product h3 {
+    margin: 0;
+  }
+  .products-table .product-content {
+    text-align: left;
+    display: inline-block;
+    margin-left: 20px;
+    vertical-align: middle;
+    width: calc(100% - 145px);
+  }
+}
+
 /*# sourceMappingURL=../css/main.css.map */
